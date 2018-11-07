@@ -10,7 +10,13 @@ class Anagram
   
   def match(anagram_array)
     
-    
+    anagram_array.each do |anagram|
+      if anagram.split("").sort == @word_array 
+        word_match = anagram 
+      end
+    end
+      
+  word_match 
   
   end
   
