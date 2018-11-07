@@ -1,17 +1,16 @@
 # Your code goes here!
 class Anagram
   
-  attr_accessor :word, :word_array
+  attr_accessor :word
   
   def initialize(word)
     @word = word 
-    @word_array = word.split("").sort 
   end
   
   def match(anagram_array)
     
     anagram_array.each do |anagram|
-      if anagram.split("").sort == @word_array 
+      if anagram.split("").sort == @word.split("").sort 
         word_match = anagram 
       end
     end
