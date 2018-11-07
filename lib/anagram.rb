@@ -20,5 +20,4 @@ class Anagram
   word_match 
   
   end
-  
 end
